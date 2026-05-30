@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索-高清剧集大全</title>
+    <meta name="description" content="全站影片搜索页面，支持按标题、年份、地区、类型、标签筛选影片。">
+    <meta name="keywords" content="最新电视剧大全,最新电视剧,全集播放,电视剧更新,热播电视剧,剧集片库,精选剧集">
+    <meta name="author" content="高清剧集大全">
+    <meta property="og:title" content="影片搜索-高清剧集大全">
+    <meta property="og:description" content="全站影片搜索页面，支持按标题、年份、地区、类型、标签筛选影片。">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="./assets/site.css">
+  </head>
+<body data-root="./">
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="./index.html" aria-label="高清剧集大全">
+          <span class="brand-mark">剧</span>
+          <span class="brand-text">
+            <strong>高清剧集大全</strong>
+            <em>最新电视剧·全集高清在线播放</em>
+          </span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+          <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./ranking.html">排行榜</a><a class="nav-link is-active" href="./search.html">搜索</a>
+        </nav>
+        <button class="mobile-menu-button" type="button" data-menu-toggle aria-label="打开导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-nav" data-mobile-nav>
+        <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./ranking.html">排行榜</a><a class="nav-link is-active" href="./search.html">搜索</a>
+        <div class="mobile-category-links">
+          <a href="./category/latest-series.html">最新剧集</a><a href="./category/hot-picks.html">热播精选</a><a href="./category/domestic-library.html">国产片库</a><a href="./category/suspense-thriller.html">悬疑惊悚</a><a href="./category/romance-urban.html">爱情都市</a><a href="./category/action-adventure.html">动作冒险</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero slim-hero">
+        <div class="section-inner">
+          <span class="section-kicker">Search</span>
+          <h1>搜索与筛选</h1>
+          <p>支持按影片标题、剧情关键词、年份、地区、类型、标签快速搜索全站 2000 部影片。</p>
+          <form class="search-page-form" data-search-form>
+            <input type="search" name="q" placeholder="输入关键词，例如：悬疑、2025、爱情、国产" aria-label="搜索影片">
+            <button type="submit">开始搜索</button>
+          </form>
+        </div>
+      </section>
+      <section class="section-inner content-section">
+        <div class="search-tools">
+          <label>
+            <span>年份</span>
+            <select data-search-year>
+              <option value="">全部年份</option>
+            </select>
+          </label>
+          <label>
+            <span>类型</span>
+            <select data-search-type>
+              <option value="">全部类型</option>
+            </select>
+          </label>
+          <label>
+            <span>排序</span>
+            <select data-search-sort>
+              <option value="heat">按热度</option>
+              <option value="year">按年份</option>
+              <option value="title">按标题</option>
+            </select>
+          </label>
+        </div>
+        <p class="search-summary" data-search-summary>正在载入影片数据…</p>
+        <div class="movie-grid" data-search-results></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="./index.html">高清剧集大全</a>
+          <p>聚合最新电视剧大全页面，展示近期更新剧集、热播剧和多类型电视剧内容。</p>
+        </div>
+        <div>
+          <h2>分类入口</h2>
+          <div class="footer-links">
+              <a href="./category/latest-series.html">最新剧集</a>
+              <a href="./category/hot-picks.html">热播精选</a>
+              <a href="./category/domestic-library.html">国产片库</a>
+              <a href="./category/suspense-thriller.html">悬疑惊悚</a>
+              <a href="./category/romance-urban.html">爱情都市</a>
+              <a href="./category/action-adventure.html">动作冒险</a>
+              <a href="./category/sci-fi-fantasy.html">科幻奇幻</a>
+              <a href="./category/comedy-family.html">喜剧家庭</a>
+              <a href="./category/costume-martial.html">古装武侠</a>
+              <a href="./category/global-drama.html">海外剧场</a>
+              <a href="./category/animation-youth.html">动画青春</a>
+              <a href="./category/premium-ranking.html">高分推荐</a>
+          </div>
+        </div>
+        <div>
+          <h2>站点导航</h2>
+          <div class="footer-links">
+            <a href="./categories.html">全部分类</a>
+            <a href="./ranking.html">站内排行榜</a>
+            <a href="./search.html">影片搜索</a>
+            <a href="./sitemap.xml">站点地图</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./assets/site.js"></script>
+    <script type="module" src="./assets/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
